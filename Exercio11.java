@@ -5,15 +5,12 @@ import java.util.Scanner;
 public class Exercio11 {
 
 	public static void main(String[]args) { 
-		Scanner palavra= new Scanner(System.in);
-		System.out.println("Digite suas notas:");
+	  Scanner palavra= new Scanner(System.in);
+		System.out.println("Informe F ou M:");
 		char letra = palavra.next().charAt(0);
 		
-		if (letra = 'F' || letra <= 'M') {
-		  System.out.println('invalido');
-		}
-		else if ( letra = 'f') {
-			}
-		}
-
+        System.out.println(letra == 'F' ? "Feminino" : letra == 'M' ? "Masculino" : "Caractere inválido.");
+		
+	}
 }
+
